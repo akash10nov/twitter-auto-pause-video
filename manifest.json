@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter/X Video Auto-Pause",
+    "version": "1.0",
+    "description": "Automatically pauses videos in the Twitter/X timeline.",
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": ["https://*.twitter.com/*", "https://*.x.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle" 
+      }
+    ]
+  }
+  
